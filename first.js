@@ -4,7 +4,7 @@
 // "trapane" -> value
 // "" -> questation mark
 // ; -> (semi colon)  end of the line
-let firstname = "trapane";
+// let firstname = "trapane";
 // let myAge = 18;
 
 //console.log -> ur dung hevleh command
@@ -82,7 +82,7 @@ let firstname = "trapane";
 // let myNum = 20;
 // if (myNum == 20) {
 //   console.log("mu Num is 20");
-// }
+// }git
 
 // let day = 1;
 // if (day == 1) {
@@ -102,3 +102,66 @@ let firstname = "trapane";
 // } else {
 //   console.log("Not week");
 // }
+// let day = 264;
+// if (day <= 31) {
+//   console.log("January");
+// } else if (day <= 31 + 28) {
+//   console.log("February");
+// } else if (day <= 31 + 28 + 31) {
+//   console.log("March");
+// } else if (day <= 31 + 28 + 31 + 30) {
+//   console.log("April");
+// } else if (day <= 31 + 28 + 31 + 30 + 31) {
+//   console.log("May");
+// } else if (day <= 31 + 28 + 31 + 30 + 31 + 30) {
+//   console.log("June");
+// } else if (day <= 31 + 28 + 31 + 30 + 31 + 30 + 31) {
+//   console.log("July");
+// } else if (day <= 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31) {
+//   console.log("August");
+// } else if (day <= 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30) {
+//   console.log("September");
+// } else if (day <= 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31) {
+//   console.log("October");
+// } else if (day <= 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30) {
+//   console.log("November");
+// } else if (day <= 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 31) {
+//   console.log("December");
+// } else {
+//   ("not month");
+// }
+
+// let midterm1 = 90;
+// let midterm2 = 60;
+// let final = 70;
+// let grade = (midterm1 + midterm2 + final) / 3;
+// if ((midterm1 + midterm2 + final) / 3 < 60) {
+//   console.log("F", grade);
+// } else if ((midterm1 + midterm2 + final) / 3 < 70) {
+//   console.log("D", grade);
+// } else if ((midterm1 + midterm2 + final) / 3 < 80) {
+//   console.log("C", grade);
+// } else if ((midterm1 + midterm2 + final) / 3 < 90) {
+//   console.log("B", grade);
+// } else if ((midterm1 + midterm2 + final) / 3 < 101) {
+//   console.log("A", grade);
+// } else {
+//   console.log("not grade");
+// }
+let midterm1 = 90;
+let midterm2 = 60;
+let final = 70;
+let grade = midterm1 * 0.25 + midterm2 * 0.25 + final * 0.5;
+if (midterm1 * 0.25 + midterm2 * 0.25 + final * 0.5 < 60) {
+  console.log("F", grade);
+} else if (midterm1 * 0.25 + midterm2 * 0.25 + final * 0.5 < 70) {
+  console.log("D", grade);
+} else if (midterm1 * 0.25 + midterm2 * 0.25 + final * 0.5 < 80) {
+  console.log("C", grade);
+} else if (midterm1 * 0.25 + midterm2 * 0.25 + final * 0.5 < 90) {
+  console.log("B", grade);
+} else if (midterm1 * 0.25 + midterm2 * 0.25 + final * 0.5 < 101) {
+  console.log("A", grade);
+} else {
+  console.log("not grade");
+}
