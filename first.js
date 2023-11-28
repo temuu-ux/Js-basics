@@ -148,20 +148,21 @@
 // } else {
 //   console.log("not grade");
 // }
-let midterm1 = 90;
-let midterm2 = 60;
-let final = 70;
-let grade = midterm1 * 0.25 + midterm2 * 0.25 + final * 0.5;
-if (midterm1 * 0.25 + midterm2 * 0.25 + final * 0.5 < 60) {
-  console.log("F", grade);
-} else if (midterm1 * 0.25 + midterm2 * 0.25 + final * 0.5 < 70) {
-  console.log("D", grade);
-} else if (midterm1 * 0.25 + midterm2 * 0.25 + final * 0.5 < 80) {
-  console.log("C", grade);
-} else if (midterm1 * 0.25 + midterm2 * 0.25 + final * 0.5 < 90) {
-  console.log("B", grade);
-} else if (midterm1 * 0.25 + midterm2 * 0.25 + final * 0.5 < 101) {
-  console.log("A", grade);
-} else {
-  console.log("not grade");
-}
+// let midterm1 = 90;
+// let midterm2 = 60;
+// let final = 70;
+// let grade = midterm1 * 0.25 + midterm2 * 0.25 + final * 0.5;
+// if (midterm1 * 0.25 + midterm2 * 0.25 + final * 0.5 < 60) {
+// if (midterm1 /4 + midterm2 /4 + final /2 < 60)                    jishee
+//   console.log("F", grade);
+// } else if (midterm1 * 0.25 + midterm2 * 0.25 + final * 0.5 < 70) {
+//   console.log("D", grade);
+// } else if (midterm1 * 0.25 + midterm2 * 0.25 + final * 0.5 < 80) {
+//   console.log("C", grade);
+// } else if (midterm1 * 0.25 + midterm2 * 0.25 + final * 0.5 < 90) {
+//   console.log("B", grade);
+// } else if (midterm1 * 0.25 + midterm2 * 0.25 + final * 0.5 < 101) {
+//   console.log("A", grade);
+// } else {
+//   console.log("not grade");
+// }
