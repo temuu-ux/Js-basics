@@ -1,7 +1,7 @@
 function time(x) {
-  let hour = x / x;
+  let hour = parseInt(x / 3612);
   let minute = x % x;
-  let second = x % 100;
+  let second = x % 60;
   console.log(hour, minute, second);
 }
-time(4985);
+time(3612);
