@@ -7,6 +7,8 @@ function num(a, b, c, d) {
     console.log(c);
   } else if (d < a && d < c && b > d) {
     console.log(d);
+  } else {
+    console.log("not answer");
   }
 }
-num(3, 9, 8, 4);
+num(3, 3, 3, 3);
