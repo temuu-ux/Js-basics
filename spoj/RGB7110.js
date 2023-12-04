@@ -1,4 +1,5 @@
 // hervee  ter too 3-t huvaagdaj baival ter toog ol
+
 function num(a, b, c, d) {
   let x = 0;
   if (a % 3 == 0) x = x + 1;

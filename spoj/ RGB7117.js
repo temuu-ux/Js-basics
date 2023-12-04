@@ -11,4 +11,4 @@ function grade(x) {
     console.log("answer", "F");
   }
 }
-grade(84);
+grade(100);

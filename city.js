@@ -1,3 +1,5 @@
+// array
+
 let city = [
   "UB",
   "Darhan",
@@ -18,7 +20,7 @@ console.log(city[5]);
 console.log(city[6]);
 console.log(city[7]);
 console.log(city[8]);
-
+// object
 let USA = {
   Newyork: {
     cityNames: "Newyork",

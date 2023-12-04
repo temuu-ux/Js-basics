@@ -9,4 +9,4 @@ function season(x) {
     console.log("winter");
   }
 }
-season(2);
+season(9);

@@ -11,4 +11,4 @@ function num(x) {
     console.log("not grade");
   }
 }
-num(3);
+num(6);
