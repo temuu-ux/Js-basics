@@ -1,69 +1,102 @@
 let products = [
   {
-    name: "fridge",
-    price: 3000000,
-    category: "elecronic product",
-    brand: "LG",
+    name: "Smartphone",
+    price: 599.99,
+    stock: 50,
+    category: "Electronics",
+    brand: "Samsung",
   },
   {
-    name: "iphone",
-    price: 2000000,
-    category: "elecronic product",
-    brand: "apple",
+    name: "Laptop",
+    price: 1099.99,
+    stock: 30,
+    category: "Electronics",
+    brand: "Apple",
   },
   {
-    name: "Smart TV",
-    price: 300000,
-    category: "elecronic product",
-    brand: "Panasonic",
+    name: "Headphones",
+    price: 129.99,
+    stock: 100,
+    category: "Electronics",
+    brand: "Sony",
   },
   {
-    name: "S7",
-    price: 1000000,
-    category: " product",
-    brand: "SAMSUNG",
+    name: "Running Shoes",
+    price: 79.99,
+    stock: 80,
+    category: "Sports",
+    brand: "Nike",
   },
   {
-    name: "door",
-    price: 90000,
-    category: "product",
-    brand: "BSB",
+    name: "Coffee Maker",
+    price: 49.99,
+    stock: 20,
+    category: "Home Appliances",
+    brand: "Keurig",
   },
   {
-    name: "hair dryer",
-    price: 450000,
-    category: "elecronic product",
-    brand: "Philips",
+    name: "Backpack",
+    price: 39.99,
+    stock: 60,
+    category: "Fashion",
+    brand: "Adidas",
   },
   {
-    name: "water boiler",
-    price: 28000,
-    category: " product",
-    brand: "BSB",
+    name: "Watch",
+    price: 199.99,
+    stock: 40,
+    category: "Accessories",
+    brand: "Casio",
+  },
+  {
+    name: "Gaming Console",
+    price: 399.99,
+    stock: 25,
+    category: "Electronics",
+    brand: "Microsoft",
+  },
+  {
+    name: "Sunglasses",
+    price: 149.99,
+    stock: 70,
+    category: "Fashion",
+    brand: "Ray-Ban",
+  },
+  {
+    name: "Wireless Speaker",
+    price: 89.99,
+    stock: 45,
+    category: "Electronics",
+    brand: "JBL",
   },
 ];
-// function get(x) {
-//   for (let i = 0; i < products.length; i = i + 1) {
-//     products[i].price = products[i].price - products[i].price * x;
-//     console.log(products[i].name, ";", products[i].price);
+// function setSale(saleAmout) {
+//   for (let i = 0; i < 10; i = i + 1) {
+//     products[i].price = products[i].price * (1 - saleAmout / 100);
 //   }
 // }
-// get(0.3);
-
-// function give() {
-//   for (let i = 0; i < products.length; i = i + 1) {
-//     if ((products[i].category = "electronic product")) {
-//       console.log(products[i].name);
+// setSale(20); // console.log(products);
+// function findByCategory(cate) {
+//   for (let i = 0; i < 10; i = i + 1) {
+//     if (products[i].category == cate) {
+//       console.log(products[i]);
 //     }
 //   }
 // }
-// give();
-function get() {
-  for (let i = 0; i < products.length; i = i + 1) {
-    if ((products[i].price.category = "product")) {
-      products[i].price = (products[i].price * (1 + 10)) / 100;
-      console.log(products[i].price.category);
+// findByCategory("Fashion");
+
+// hervee untei baival teriig garga
+function high() {
+  let mostExpensive = products[0].price;
+  let name = products[0].name;
+  for (let i = 0; i < 10; i = i + 1) {
+    if (products[i].price > mostExpensive) {
+      products[i].price = mostExpensive;
+    }
+    if (products[i].name > name) {
+      products[i].name = name;
     }
   }
+  console.log(name, ";", mostExpensive);
 }
-get();
+high();
