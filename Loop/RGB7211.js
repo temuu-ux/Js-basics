@@ -17,20 +17,20 @@
 // 3^3=27
 // 3^4=81
 // 3^5=243
-function num(a, b) {
-  let degree = 1;
-  for (let i = 1; i <= b; i++) {
-    degree = a ** i;
-    console.log(degree);
-  }
-}
-num(3, 5);
-
-// function findDegree(a, b) {
+// function num(a, b) {
 //   let degree = 1;
-//   for (let i = 0; i < b; i++) {
-//     degree = degree * a;
+//   for (let i = 1; i <= b; i++) {
+//     degree = a ** i;
 //     console.log(degree);
 //   }
 // }
-// findDegree(3, 5);
+// num(3, 5);
+
+function findDegree(a, b) {
+  let degree = 1;
+  for (let i = 1; i <= b; i++) {
+    degree = degree * a;
+    console.log(a + "^" + i + "=" + degree);
+  }
+}
+findDegree(3, 5);

@@ -17,9 +17,24 @@
 // Output:
 // 3 2
 function num(a, b, c) {
-  let = x;
-  if ((c % b) + 1 && c / a) {
+  let floor = 0;
+  let door = 0;
+  if (c <= a * b && a <= 5) {
+    floor = parseInt((c - 1) / b) + 1;
+    door = ((c - 1) % b) + 1;
   }
-  console.log();
+  if (c > a * b) {
+    floor = "error";
+    door = "error";
+  }
+  console.log("floor", floor, "door", door);
 }
-num(5, 4, 10);
+
+num(5, 4, 20);
+
+// function num(a, b, c) {
+//   floor = parseInt((c - 1) / b + 1);
+//   let door = ((c - 1) % b) + 1;
+//   console.log("floor", ";" + floor, "door", ";" + door);
+// }
+// num(5, 4, 25);

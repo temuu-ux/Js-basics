@@ -24,9 +24,9 @@
 // 3*10=30
 function num(x) {
   let multiple = 1;
-  for (let i = 0; i < 10; i++) {
+  for (let i = 1; i < 10; i++) {
     multiple = x * i;
-    console.log(multiple);
+    console.log(x + "*" + i + "=" + multiple);
   }
 }
 num(9);

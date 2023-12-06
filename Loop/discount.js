@@ -86,17 +86,35 @@ let products = [
 // findByCategory("Fashion");
 
 // hervee untei baival teriig garga
-function high() {
-  let mostExpensive = products[0].price;
-  let name = products[0].name;
-  for (let i = 0; i < 10; i = i + 1) {
-    if (products[i].price > mostExpensive) {
-      products[i].price = mostExpensive;
-    }
-    if (products[i].name > name) {
-      products[i].name = name;
-    }
+// function high() {
+//   let mostExpensive = products[0].price;
+//   let name = products[0].name;
+//   for (let i = 0; i < 10; i = i + 1) {
+//     if (products[i].price < mostExpensive) {
+//       products[i].price = mostExpensive;
+//     }
+//     if (products[i].name > name) {
+//       products[i].name = name;
+//     }
+//   }
+//   console.log(name, ";", mostExpensive);
+// }
+// high();
+function findAboveAverage(prods) {
+  let avgPrice = 0;
+  let sumPrice = 0;
+  for (let i = 0; i < prods.length; i++) {
+    sumPrice = sumPrice + prods[i].price;
   }
-  console.log(name, ";", mostExpensive);
+  console.log("sumPrice", sumPrice);
+  avgPrice = sumPrice / prods.length;
+  console.log("avgPrice", avgPrice);
+  return [];
 }
-high();
+let aboveAVG = findAboveAverage(products);
+console.log(aboveAVG);
+
+function findAvg(prods) {
+  let avgPrice = 0;
+  return avgPrice;
+}

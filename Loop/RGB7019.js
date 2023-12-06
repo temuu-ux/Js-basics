@@ -6,7 +6,7 @@ function num(a, b, c) {
   console.log(a);
 }
 num(2, 3, 4);
-
+//  -------------------------------------
 function num(a, b, c) {
   let A = a * b - c;
   console.log(A);
