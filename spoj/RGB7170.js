@@ -19,7 +19,7 @@
 function num(a, b, c) {
   let floor = 0;
   let door = 0;
-  if (c <= a * b && a <= 5) {
+  if (c <= a * b) {
     floor = parseInt((c - 1) / b) + 1;
     door = ((c - 1) % b) + 1;
   }
@@ -30,7 +30,7 @@ function num(a, b, c) {
   console.log("floor", floor, "door", door);
 }
 
-num(5, 4, 20);
+num(5, 4, 25);
 
 // function num(a, b, c) {
 //   floor = parseInt((c - 1) / b + 1);

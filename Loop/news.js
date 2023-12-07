@@ -70,33 +70,31 @@ let news = [
     category: "psychology",
   },
 ];
-// function filterByDate() {
-//   let lastNews = news[0].pubDate;
-//   for (let i = 0; i < news.length; i++) {
-//     if (news[i].pubDate < lastNews) {
-//       lastNews = news[i].pubDate;
-//     }
-//   }
-//   console.log(lastNews);
-// }
-// filterByDate();
-
-// function filterAutor() {
-//   let people = news[0].autor;
-//   for (let i = 0; i < news.length; i++) {
-//     if (news[i].autor < people) {
-//       people = news[i];
-//     }
-//   }
-//   console.log(people);
-// }
-
-// filterAutor();
-function findByCategory(cate) {
-  for (let i = 0; i < news.length; i = i + 1) {
-    if (news[i].category == cate) {
-      console.log(news[i]);
+function filterByDate() {
+  let lastNews = news[0].pubDate;
+  for (let i = 0; i < news.length; i++) {
+    if (news[i].pubDate > lastNews) {
+      lastNews = news[i].pubDate;
     }
   }
+  console.log(lastNews);
 }
-findByCategory("Politcs");
+filterByDate();
+
+// function filterAutor(people) {
+//   for (let i = 0; i < news.length; i++) {
+//     if (news[i].autor == people) {
+//       console.log(news[i]);
+//     }
+//   }
+// }
+// filterAutor("Boldoo");
+
+// function findByCategory(cate) {
+//   for (let i = 0; i < news.length; i = i + 1) {
+//     if (news[i].category == cate) {
+//       console.log(news[i]);
+//     }
+//   }
+// }
+// findByCategory("psychology");
