@@ -7,7 +7,7 @@ function num(a, b, c, d) {
     entrance = x = d % (a * b);
     entrance = (d - x) / (a * b) + 1;
     door = ((d - 1) % c) + 1;
-  } else if (d > a * b * c && b > 3 && a > 5) {
+  } else if (d > a * b * c && b < 3 && a > 5) {
     console.log("error");
   }
   console.log("floor", floor, "entrance", entrance, "door", door);
