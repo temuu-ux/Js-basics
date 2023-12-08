@@ -38,3 +38,4 @@ num(5, 4, 15);
 //   console.log("floor", ";" + floor, "door", ";" + door);
 // }
 // num(5, 4, 25);
+// floor ()
