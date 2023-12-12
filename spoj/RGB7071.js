@@ -6,16 +6,16 @@ function num(x) {
     result = result + sum;
   }
   // wejg
-  console.log(result);
+  // console.log(result);
   // wrugh
   return result;
 }
-num(5);
+// num(5);
 // eth
-let answer = num(5);
-console.log(answer);
+// let answer = num(5);
+// console.log(answer);
 // wrbv
-console.log(num(5));
+console.log(num(4));
 
 // function num(x) {
 //   let sum = 0;

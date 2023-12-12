@@ -6,4 +6,4 @@ function num(x) {
   }
   console.log(sum);
 }
-num(10);
+num(5);
