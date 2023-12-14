@@ -70,9 +70,9 @@ let products = [
     brand: "Samsung",
   },
 ];
-let pro = products.map((a) => a.price);
-console.log("price", pro);
-// let findPrice = products.sort((a) => a.price);
-// console.log(findPrice);
-let pro1 = products.map((a) => a.category);
-console.log("category", pro1);
+let max = 600;
+let min = 90;
+let findPrices = products.filter((a) => {
+  return a.price <= max && a.price >= min;
+});
+console.log("prices", findPrices);

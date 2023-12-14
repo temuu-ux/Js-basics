@@ -70,6 +70,14 @@ let products = [
     brand: "Samsung",
   },
 ];
+// sort
 products.sort((a, b) => a.stock - b.stock);
 
 console.log(products);
+// map
+let stocks = products.map((a) => {
+  return a.stock;
+});
+console.log("stocks", stocks);
+
+// sort bol buurguruudee amtaar ni ihees bag ruu daraalluul na

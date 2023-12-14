@@ -70,7 +70,13 @@ let products = [
     brand: "Samsung",
   },
 ];
-products.sort((a, b) => {
-  return a.price - b.price;
+let prices = products.map((a) => {
+  return a.price;
 });
-console.log(products);
+console.log(prices);
+
+prices.sort((a, b) => a - b);
+console.log("price", prices);
+
+// map bol avan gsen zuileel yag gargaj irne
+// olon torliin burgeriin yag ter burguuruudiin ter mahiiig gargaj chadna

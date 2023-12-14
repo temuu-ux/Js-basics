@@ -84,10 +84,18 @@ let products = [
 //   console.log(nums);
 // });
 // products.filter();
-function findBrand(brand) {
-  let brandArr = products.filter((a) => {
-    return a.brand == brand;
-  });
-  console.log(brandArr);
-}
-findBrand("Samsung");
+// function findBrand(brand) {
+//   let brandArr = products.filter((a) => {
+//     return a.brand == brand;
+//   });
+//   console.log(brandArr);
+// }
+// findBrand("Samsung");
+
+let findBrand = products.filter((a) => {
+  return a.brand == "Samsung";
+});
+console.log("brannd", findBrand);
+
+// filter bol 1 utag avna mon tuhain todotgoj avsan zuileel zovhon gargan
+// olon torliin burgerees yag ter buurgeriig gargan
