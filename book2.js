@@ -140,21 +140,52 @@ const bookData = [
     price: 17.99,
   },
 ];
+// find 12-18 priced range books
+// sort books by rating
+// find more than 20 length books
+// add summary on object by like this `A captivating book by ${book.author}.`
+
 // let maxPrice = 25;
 // let minPrice = 19;
 // let findPrice = bookData.filter((a) => {
 //   return a.price < maxPrice, a.price > minPrice;
 // });
 // console.log(findPrice);
-// find 12-18 priced range books
-// sort books by rating
-// find more than 20 length books
-// add summary on object by like this `A captivating book by ${book.author}.`
 
-// function findPrice(max, min) {
-//   let findMaxMin = bookData.filter((a) => {
-//     return a.price < max, a.price > min;
-//   });
-//   return findMaxMin;
+
+// filter
+
+function findPrice(min, max) {
+  let findBetween = bookData.filter((a) => {
+    return  a.price >= min && a.price <= max;
+  });
+  return findBetween;
+}
+console.log(findPrice(19, 20));
+
+function book() {
+  let targetBook=findPrice(19, 20).map((onlyP)=>{
+    return onlyP.price
+  })
+  return targetBook
+}
+console.log(book());
+
+// sort
+
+// function ratingBook() {
+// let betweenPrice = []
+//  betweenPrice=bookData.sort((a,b)=>{
+//    return a.price-b.price
+//  })
+//  return betweenPrice
 // }
-// console.log(findPrice(25, 18));
+// console.log(ratingBook());
+
+// function book() {
+//   let targetBook=ratingBook(12,18).map((onlyP)=>{
+//     return onlyP.price
+//   })
+//   return targetBook
+// }
+// console.log(book());

@@ -149,3 +149,7 @@ function titleLong(x) {
   return findLong;
 }
 console.log(titleLong(27));
+let titleL=titleLong(27).map((a)=>{
+  return a.title
+})
+console.log("title",titleL);

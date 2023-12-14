@@ -141,11 +141,29 @@ const bookData = [
   },
 ];
 // add summary on object by like this `A captivating book by ${book.author}.
-function addSummary(books) {
-  let firstArray = books;
-  for (let i = 0; i < firstArray.length; i++) {
-    firstArray[i].summary = "A captivating book by David Goginns";
+
+// function addSummary(books) {
+//   let firstArray = books;
+//   for (let i = 0; i < firstArray.length; i++) {
+//     firstArray[i].summary = "A captivating book by David Goginns";
+//   }
+//   return firstArray;
+// }
+// console.log(addSummary(bookData));
+
+// function addSummary(x) {
+//   let books=x;
+//   for (let i = 0; i < books.length; i++) {
+//     books[i].summary = 'by natalya';
+//   }
+//   return books;
+// }
+// console.log(addSummary(bookData));
+function sumury(a) {
+  let books=a
+  for (let i = 0; i < books.length; i++) {
+    books[i].summary='by rowling'
   }
-  return firstArray;
+  return books
 }
-console.log(addSummary(bookData));
+console.log(sumury(bookData));
