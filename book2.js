@@ -151,10 +151,10 @@ const bookData = [
 // find more than 20 length books
 // add summary on object by like this `A captivating book by ${book.author}.`
 
-// function findPrice(max, min) {
-//   let findMaxMin = bookData.filter((a) => {
-//     return a.price < max, a.price > min;
-//   });
-//   return findMaxMin;
-// }
-// console.log(findPrice(25, 18));
+function findPrice(max, min) {
+  let findMaxMin = bookData.filter((a) => {
+    return a.price < max, a.price > min;
+  });
+  return findMaxMin;
+}
+console.log(findPrice(25, 18));

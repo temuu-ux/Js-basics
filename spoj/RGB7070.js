@@ -6,4 +6,11 @@ function num(x) {
   }
   console.log(sum);
 }
-num(5);
+num(10);
+
+// let sum = 0;
+// function num(x) {
+//   sum = ((x + 1) * x) / 2;
+// }
+// console.log(sum);
+// num(10);
