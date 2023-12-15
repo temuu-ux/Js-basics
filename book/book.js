@@ -137,22 +137,43 @@ const bookData = [
     author: "Herman Melville",
     genre: "Adventure",
     rating: 4.4,
-    price: 17.99,
+    price: 11.99,
   },
 ];
-function book(x) {
-  let expensiveBook = bookData.filter((a) => {
-    return a.price > x;
-  });
-  return expensiveBook;
-}
-console.log(book(12));
+// function book(x) {
+//   let expensiveBook = bookData.filter((a) => {
+//     return a.price > x;
+//   });
+//   return expensiveBook;
+// }
+// console.log(book(12));
 
+// let exBook=bookData.map((pri)=>{
+//   return pri.price
+// })
+// console.log(exBook);
 // let allBook = book.map((price) => {
 //   return price.price;
 // });
+
 // find Expensive book more than 12
 // find 12-18 priced range books
 // sort books by rating
 // find more than 20 length books
 // add summary on object by like this `A captivating book by ${book.author}.`
+
+function book(x) {
+  let findBook = x.map((price) => {
+    return price.price;
+  });
+  return findBook;
+}
+console.log(book(bookData));
+
+function findBook(y) {
+  let findExBook = book(bookData).filter((ex) => {
+    return ex.price > y;
+  });
+  return findExBook;
+}
+console.log(findBook(12));

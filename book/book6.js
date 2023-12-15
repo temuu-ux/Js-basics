@@ -140,21 +140,15 @@ const bookData = [
     price: 17.99,
   },
 ];
-// let maxPrice = 25;
-// let minPrice = 19;
-// let findPrice = bookData.filter((a) => {
-//   return a.price < maxPrice, a.price > minPrice;
-// });
-// console.log(findPrice);
-// find 12-18 priced range books
-// sort books by rating
-// find more than 20 length books
-// add summary on object by like this `A captivating book by ${book.author}.`
-
-function findPrice(max, min) {
-  let findMaxMin = bookData.filter((a) => {
-    return a.price < max, a.price > min;
+function bookTitle(x) {
+  let books = bookData.filter((a) => {
+    return a.title.length > x;
   });
-  return findMaxMin;
+  return books;
 }
-console.log(findPrice(25, 18));
+console.log(bookTitle(10));
+
+let targetTitle = bookTitle(10).map((titleL) => {
+  return titleL.title;
+});
+console.log(targetTitle);

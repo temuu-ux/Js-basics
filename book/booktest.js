@@ -140,12 +140,11 @@ const bookData = [
     price: 17.99,
   },
 ];
-// find more than 20 length books
-// add summary on object by like this `A captivating book by ${book.author}.
-function titleLong(x) {
-  const findLong = bookData.filter((a) => {
-    return a.title.length > x;
-  });
-  return findLong;
+function bySummury(books) {
+  //  let firstArray=books
+  for (let i = 0; i < books.length; i++) {
+    books[i].summary = "by jimii";
+  }
+  return books;
 }
-console.log(titleLong(27));
+console.log(bySummury(bookData));
